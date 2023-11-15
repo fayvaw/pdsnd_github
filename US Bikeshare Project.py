@@ -18,7 +18,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
-    ---
+
     Returns:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
@@ -185,8 +185,9 @@ def user_stats(df):
         print("\nBirth year information not available for this dataset.")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
-
+    print('-'*40) # a break line
+    
+    
 # to display raw data
 def display_data(df):
     #asks the user to specify whether or not user wants to see rows of the raw data
